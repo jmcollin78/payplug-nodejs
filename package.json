@@ -1,0 +1,79 @@
+{
+  "author": {
+    "name": "JM. COLLIN",
+    "email": "jm.collin@clouderial.com"
+  },
+  "bugs": {
+    "url": "https://github.com/clouderial/payplug-nodejs/issues"
+  },
+  "contributors": [
+    {
+      "name": "Jean-Marc Collin",
+      "email": "jm.collin@clouderial.com"
+    }
+  ],
+  "dependencies": {
+    "jmcnet": "*",
+    "lodash": "*",
+    "lodash.pluck": "*",
+    "log4js": "*",
+    "meld": "*",
+    "q": "*"
+  },
+  "description": "Payplug API for NodeJS",
+  "devDependencies": {
+    "chai": "*",
+    "chai-as-promised": "*",
+    "chai-connect-middleware": "*",
+    "expect.js": "*",
+    "gulp": "*",
+    "gulp-env": "*",
+    "gulp-istanbul": "*",
+    "gulp-jshint": "*",
+    "gulp-mocha": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "lazypipe": "*",
+    "mocha": "*",
+    "requirejs": "*",
+    "rimraf": "*",
+    "should": "*",
+    "yargs": "*"
+  },
+  "directories": {},
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.15.x"
+  },
+  "homepage": "https://github.com/clouderial/payplug-nodejs#readme",
+  "main": "./lib/payplug-nodejs.js",
+  "maintainers": [
+    {
+      "name": "jmcnet",
+      "email": "the.jmcnet.team@gmail.com"
+    }
+  ],
+  "name": "payplug-nodejs",
+  "optionalDependencies": {},
+  "private": false,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clouderial/payplug-nodejs.git"
+  },
+  "scripts": {
+    "start": "node node_modules/gulp/bin/gulp",
+    "test": "node node_modules/gulp/bin/gulp testu"
+  },
+  "version": "0.2.0",
+  "warnings": [
+    {
+      "code": "ENOTSUP",
+      "required": {
+        "node": "0.12.x",
+        "npm": "2.15.x"
+      },
+      "pkgid": "payplug-nodejs@0.2.0"
+    }
+  ]
+}
