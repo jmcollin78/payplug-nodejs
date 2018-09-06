@@ -42,7 +42,7 @@
   },
   "directories": {},
   "engines": {
-    "node": "0.12.x",
+    "node": "9.x.x",
     "npm": "2.15.x"
   },
   "homepage": "https://github.com/clouderial/payplug-nodejs#readme",
@@ -65,7 +65,7 @@
     "start": "node node_modules/gulp/bin/gulp",
     "test": "node node_modules/gulp/bin/gulp testu"
   },
-  "version": "0.2.0",
+  "version": "0.2.1",
   "warnings": [
     {
       "code": "ENOTSUP",
