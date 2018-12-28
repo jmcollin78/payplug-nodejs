@@ -13,37 +13,38 @@
     }
   ],
   "dependencies": {
-    "jmcnet": "*",
-    "lodash": "*",
+    "jmcnet": "^1.7.3",
+    "lodash": "^4.17.11",
     "lodash.pluck": "*",
-    "log4js": "*",
+    "log4js": "^3.0.6",
     "meld": "*",
     "q": "*"
   },
   "description": "Payplug API for NodeJS",
   "devDependencies": {
-    "chai": "*",
+    "chai": "^4.2.0",
     "chai-as-promised": "*",
     "chai-connect-middleware": "*",
     "expect.js": "*",
-    "gulp": "*",
+    "gulp": "^4.0.0",
     "gulp-env": "*",
     "gulp-istanbul": "*",
     "gulp-jshint": "*",
     "gulp-mocha": "*",
     "gulp-util": "*",
     "gulp-watch": "*",
-    "lazypipe": "*",
+    "jshint": "^2.9.7",
+    "lazypipe": "^1.0.2",
     "mocha": "*",
     "requirejs": "*",
     "rimraf": "*",
     "should": "*",
-    "yargs": "*"
+    "yargs": "^12.0.5"
   },
   "directories": {},
   "engines": {
-    "node": "9.x.x",
-    "npm": "2.15.x"
+    "node": "10.10.x",
+    "npm": "6.4.x"
   },
   "homepage": "https://github.com/clouderial/payplug-nodejs#readme",
   "main": "./lib/payplug-nodejs.js",
@@ -65,7 +66,7 @@
     "start": "node node_modules/gulp/bin/gulp",
     "test": "node node_modules/gulp/bin/gulp testu"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "warnings": [
     {
       "code": "ENOTSUP",
