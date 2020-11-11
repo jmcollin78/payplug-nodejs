@@ -17,6 +17,7 @@
     "lodash": "^4.17.11",
     "lodash.pluck": "*",
     "log4js": "^3.0.6",
+    "log4js-json-layout": "^2.2.2",
     "meld": "*",
     "q": "*"
   },
@@ -66,7 +67,7 @@
     "start": "node node_modules/gulp/bin/gulp",
     "test": "node node_modules/gulp/bin/gulp testu"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "warnings": [
     {
       "code": "ENOTSUP",

@@ -61,7 +61,7 @@ describe('<PlayPlug API Unit Test>', function () {
             })
             .fail(function (err) {
                 expect(err).to.be.instanceof(jmcnetException.FunctionalException);
-                expect(err.message).to.contains('The API key you provided (aWrongSecretKey) is not valid');
+                expect(err.message).to.contains('The API key you provided (*************ey) is not valid');
                 expect(err.parameters[0]).to.equal(401);
                 expect(err.parameters[1]).to.equal('Unauthorized');
                 expect(err.parameters[2]).to.equal('GET /v1/payments?page=1&per_page=0');
