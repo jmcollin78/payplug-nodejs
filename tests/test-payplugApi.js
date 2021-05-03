@@ -13,7 +13,13 @@
  * Module dependencies.
  */
 var expect = require('chai').expect; // jshint ignore:line
-var log = require('log4js').getLogger('testu'),
+
+const
+    log4js = require('log4js'),
+    jsonLayout = require('log4js-json-layout');
+log4js.addLayout('json', jsonLayout);
+
+var log = log4js.getLogger('testu'),
     jmcnet = require('jmcnet'),
     jmcnetException = jmcnet.exception,
     //    _ = require('lodash'),

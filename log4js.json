@@ -3,8 +3,9 @@
 		"logFile": {
 			"type": "dateFile",
 			"filename": "../logs/payplug-nodejs.log",
-			"pattern": "-yyyy-MM-dd",
-			"maxLogSize": 20480,
+			"pattern": ".yyyy-MM-dd",
+            "keepFileExt": true,
+            "maxLogSize": 10000000,
 			"backups": 3
 		},
 		"errorFile": {
@@ -22,21 +23,32 @@
 		"testu": {
 			"type": "dateFile",
 			"filename": "../logs/testu.log",
-			"pattern": "-yyyy-MM-dd",
-			"maxLogSize": 20480,
+			"pattern": ".yyyy-MM-dd",
+            "keepFileExt": true,
+            "maxLogSize": 10000000,
 			"backups": 3
 		},
 		"console": {
-			"type": "console"
-		}
+            "type": "console",
+            "layout": {
+                "type": "json",
+                "source": "app"
+            }
+        },
+        "stdout": {
+            "type": "stdout",
+            "layout": {
+              "type": "json",
+              "source": "app"
+            }
+        }
 	},
 	"categories": {
 		"default": { "appenders": ["console"], "level": "INFO" },
-		"jmcnet": { "appenders": ["logFile", "error"], "level": "INFO" },
-		"ppnjs": { "appenders": ["logFile", "error"], "level": "INFO" },
-		"ppnjs": { "appenders": ["logFile", "error"], "level": "INFO" },
-		"ppnjs.PayPlugAPI": { "appenders": ["logFile", "error"], "level": "TRACE" },
-		"ppnjs.Payment": { "appenders": ["logFile", "error"], "level": "TRACE" },
+		"jmcnet": { "appenders": ["logFile", "error", "stdout"], "level": "INFO" },
+		"ppnjs": { "appenders": ["logFile", "error", "stdout"], "level": "INFO" },
+		"ppnjs.PayPlugAPI": { "appenders": ["logFile", "error", "stdout"], "level": "TRACE" },
+		"ppnjs.Payment": { "appenders": ["logFile", "error", "stdout"], "level": "TRACE" },
 		"testu": { "appenders": ["logFile", "error", "testu"], "level": "TRACE" }
 	}
 }
